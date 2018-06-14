@@ -1,0 +1,11 @@
+<apex:page >
+	<apex:outputText value="Welcome {!$User.FirstName}"/><br/>
+	<apex:outputText value="This page was loaded at {!NOW()}"/><br/>
+	<apex:outputText value="This means it is day {!DAY(TODAY())} of
+		{!CASE(MONTH(TODAY()),1,'January',2,
+		'February',3,'March',4,'April',5,'May',6,
+		'June',7,'July',8,'August',9,'September',10,
+		'October',11,'November','December')}
+		of the year {!YEAR(TODAY())}"/><br/>
+	<apex:outputText value="{!UPPER('my lower case text')}"/>
+</apex:page>

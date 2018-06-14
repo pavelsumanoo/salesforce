@@ -1,0 +1,31 @@
+<apex:page showHeader="false" sidebar="false" standardStyleSheets="false">
+<style>
+.myClass {
+font-weight: bold;
+color: red;
+}
+.myClass2 {
+font-style: italic;
+text-decoration: underline;
+}
+p {
+text-decoration: underline;
+}
+a {
+font-size:14pt;
+}
+</style>
+<h1>Hello HTML!</h1>
+<h2>My name is Michael</h2>
+<h3>HTML is awesome!</h3>
+<p>This is a paragraph element</p>
+<b class="myClass">This is bold text</b>
+<i>This is italic text</i><u>This is underlined text</u><br/>
+This is text on a new line<br/><br/>
+Two lines lower
+<br/><br/>
+<a href="http://google.com">Take me to Google!</a>
+<p class="myClass myClass2">
+Bolded Red Text
+</p>
+</apex:page>
