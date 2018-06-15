@@ -18,12 +18,12 @@ public with sharing class Contact_Methods {
 	}
 
 	/**
-	* afterInsert
+	* afterUpsert
 	* @description A static method for the Contact object containing
 	* logic to be performed on the after insert event
 	* @param newlist List collection of Contact records to execute logic on
 	*/
-	public static void afterInsert(list<Contact> newlist){
+	public static void afterUpsert(list<Contact> newlist){
 		//retrieve set of Account Ids for these Contacts and update Account Number
 		// of Contacts field where applicable
 		updateAccountNumberOfContacts(retrieveSetOfContactAccounts(newlist));
