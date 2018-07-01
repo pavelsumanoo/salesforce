@@ -1,0 +1,21 @@
+<apex:page controller="potential_Manager">
+<script>
+
+    var myList = '{!accountPotentials}';
+    console.log(myList);
+
+    var requests = []; 
+    </script> 
+    <apex:repeat value="{!accountPotentials}" var="request"> 
+        <script> 
+            requests.push('{!request}'); 
+        </script> 
+    </apex:repeat>  
+ 
+    <script>
+        window.onload = alertRequest;    
+        function alertRequest(){
+         alert(requests[0]);
+        }
+    </script>
+</apex:page>

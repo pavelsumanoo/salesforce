@@ -1,0 +1,173 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "util",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "util",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 33,
+                "line": 16
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "reverseSObjectList",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "List",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 31
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "twoDigitIntegerString",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 50
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "convertToIntegerString",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "Integer"
+                },
+                {
+                    "name": "magnitude",
+                    "type": "Integer"
+                }
+            ],
+            "references": [],
+            "returnType": "String",
+            "type": null
+        }
+    ],
+    "name": "util",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 14,
+            "line": 5
+        },
+        "modifiers": [
+            "public"
+        ],
+        "name": "util",
+        "references": [],
+        "type": "util"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 66,
+                "line": 16
+            },
+            "modifiers": [],
+            "name": "input",
+            "references": [],
+            "type": "List<SObject>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 23,
+                "line": 17
+            },
+            "modifiers": [],
+            "name": "temp",
+            "references": [],
+            "type": "List<SObject>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 22,
+                "line": 18
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 53,
+                "line": 31
+            },
+            "modifiers": [],
+            "name": "input",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 54,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "input",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 69,
+                "line": 50
+            },
+            "modifiers": [],
+            "name": "magnitude",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 9,
+                "line": 52
+            },
+            "modifiers": [],
+            "name": "returnvalue",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

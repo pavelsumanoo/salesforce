@@ -1,0 +1,38 @@
+<apex:page controller="RemoteController" showHeader="true" sidebar="true" >
+	<script>
+				var res = [1,2,3,4,];
+				//console.log(res);
+	</script>
+	<script>
+		//new array();
+		RemoteController.searchAccount('', function(Potential__c, event) {
+		    if (event.status) {
+		        console.log(Potential__c[0]);
+		        res = event.result;
+		        //console.log(event);
+		    
+		    } 
+		    else if (event.type === 'exception') {
+		        console.error(event.message, event.where);
+		}}
+		);
+		RemoteController.selectPurchased('', function(Account, event) {
+		    if (event.status) {
+		        console.log(Account[0]);
+		        res = event.result;
+		        console.log(event);
+		    
+		    } 
+		    else if (event.type === 'exception') {
+		        console.error(event.message, event.where);
+		}}
+		)
+
+
+	</script>
+
+	<script>
+		console.log("salida");
+		console.log(res);		
+	</script>
+</apex:page>

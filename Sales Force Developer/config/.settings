@@ -1,0 +1,16 @@
+{
+    "projectName": "Sales Force Developer",
+    "username": "pavel@topengineer.io",
+    "id": "d252ae40-6f79-11e8-a0f8-c3254124cfae",
+    "namespace": "",
+    "environment": "developer",
+    "loginUrl": "https://login.salesforce.com/",
+    "workspace": "/Users/onamus/topengineer/SalesForce/developer",
+    "subscription": [
+        "ApexClass",
+        "ApexComponent",
+        "ApexPage",
+        "ApexTrigger",
+        "StaticResource"
+    ]
+}

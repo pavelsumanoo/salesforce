@@ -1,0 +1,5 @@
+<aura:component controller="testingController">
+    <ltng:require scripts="{!join(',',
+          $Resource.d3Libraries + 'jquery.min.js',
+          $Rescouce.d3Libraries + 'd3.v4.min.js')}" afterScriptsLoaded="{!c.initD3Charts}"/>
+</aura:component>

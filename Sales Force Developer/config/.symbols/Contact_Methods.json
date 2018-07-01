@@ -1,0 +1,372 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "Contact_Methods",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "Contact_Methods",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 13
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "beforeInsert",
+            "parameters": [
+                {
+                    "name": "newlist",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 26
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "afterUpsert",
+            "parameters": [
+                {
+                    "name": "newlist",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 38
+            },
+            "modifiers": [
+                "private",
+                "static"
+            ],
+            "name": "formatContactName",
+            "parameters": [
+                {
+                    "name": "input",
+                    "type": "Contact"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 56
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "retrieveSetOfContactAccounts",
+            "parameters": [
+                {
+                    "name": "contacts",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "Set",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 77
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "updateAccountNumberOfContacts",
+            "parameters": [
+                {
+                    "name": "accountIds",
+                    "type": "Set"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 112
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "beforeUpdate",
+            "parameters": [
+                {
+                    "name": "newlist",
+                    "type": "List"
+                },
+                {
+                    "name": "oldList",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 21,
+                "line": 128
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "afterUpdate",
+            "parameters": [
+                {
+                    "name": "newlist",
+                    "type": "List"
+                },
+                {
+                    "name": "oldList",
+                    "type": "List"
+                }
+            ],
+            "references": [],
+            "returnType": "void",
+            "type": null
+        }
+    ],
+    "name": "Contact_Methods",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 5
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "Contact_Methods",
+        "references": [],
+        "type": "Contact_Methods"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 13
+            },
+            "modifiers": [],
+            "name": "newlist",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 15
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "newlist",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 40,
+                "line": 38
+            },
+            "modifiers": [],
+            "name": "input",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 56
+            },
+            "modifiers": [],
+            "name": "contacts",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 58
+            },
+            "modifiers": [],
+            "name": "accountIds",
+            "references": [],
+            "type": "Set<Id>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 59
+            },
+            "modifiers": [],
+            "name": "c",
+            "references": [],
+            "type": "Contact"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 59,
+                "line": 77
+            },
+            "modifiers": [],
+            "name": "accountIds",
+            "references": [],
+            "type": "Set<Id>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 25,
+                "line": 82
+            },
+            "modifiers": [],
+            "name": "accountContactsAggregate",
+            "references": [],
+            "type": "List<AggregateResult>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 17,
+                "line": 88
+            },
+            "modifiers": [],
+            "name": "accountsToUpdate",
+            "references": [],
+            "type": "List<Account>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 24,
+                "line": 92
+            },
+            "modifiers": [],
+            "name": "ar",
+            "references": [],
+            "type": "AggregateResult"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 12,
+                "line": 94
+            },
+            "modifiers": [],
+            "name": "currentAccount",
+            "references": [],
+            "type": "Account"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 48,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "newlist",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 71,
+                "line": 112
+            },
+            "modifiers": [],
+            "name": "oldList",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 114
+            },
+            "modifiers": [],
+            "name": "i",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 47,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "newlist",
+            "references": [],
+            "type": "List<Contact>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 70,
+                "line": 128
+            },
+            "modifiers": [],
+            "name": "oldList",
+            "references": [],
+            "type": "List<Contact>"
+        }
+    ]
+}

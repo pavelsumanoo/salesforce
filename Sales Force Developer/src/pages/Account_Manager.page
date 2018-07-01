@@ -1,0 +1,84 @@
+<apex:page controller="Account_Manager" showHeader="true" sidebar="true" tabStyle="Account">
+	<!--sectionHeaders add nice page titling; when used with a standard
+	controller, they also use the object icon-->
+	<apex:sectionHeader title="Account Manager"/>
+	<!--pageMessages elements are where messages can be displayed; they are
+	targetted by the id paramenter-->
+	<apex:pageMessages id="messages"/>
+	<apex:form>
+		<apex:actionRegion >
+			<apex:pageBlock title="Account">
+				<apex:pageblocksection columns="1">
+					<apex:inputfield value="{!placeholderContact.accountid}"/>
+					<apex:pageblocksectionitem >
+						<apex:outputlabel value=""/>
+						<apex:commandButton value="Manage Contacts"
+						action="{!selectAccount}"
+						rerender="AccountContactsArea"/>
+						<!--this rerender targets the Contact section by its id
+						attribute and updates that section when a new Account is
+						selected-->
+					</apex:pageblocksectionitem>
+				</apex:pageblocksection>
+			</apex:pageBlock>
+		</apex:actionRegion>
+		<!--By using an outputpanel to wrap the entire Contacts area, we can
+		control when it is Displayed and refresh, or rerender, only this
+		section of the page-->
+		<apex:outputpanel id="AccountContactsArea">
+		<!-- Use the rendered attribute to conditionally display elements;
+		In this case, we only want to display Contacts if an Account is
+		selected-->
+			<apex:pageblock title="Account Contacts for {!placeholderContact.Account.name}"
+				id="AccountContacts" rendered="{!placeholderContact.accountid != null}">
+				<!-- Place button to save new contact at bottom of this block-->
+				<apex:pageblockbuttons location="bottom">
+					<apex:commandButton value="Save New Contact" action="{!saveNewContact}"/>
+				</apex:pageblockbuttons>
+				<apex:pageBlockTable value="{!accountContacts}" var="c">
+
+					<!-- actions for Contact -->
+					<apex:column headerValue="Actions">
+						<apex:actionRegion>
+							<apex:outputLink target="_blank" value="/{!c.id}">View</apex:outputLink>
+							<apex:outputtext value=" | "/>
+								<apex:commandLink value="Del" action="{!deleteContact}" rerender="AccountContactsArea, messages">
+								<apex:param name="actionContactId" value="{!c.id}" assignTo="{!actionContactId}"/>
+							</apex:commandLink>
+						</apex:actionRegion>
+					</apex:column>
+					<apex:column headerValue="First">
+						<apex:outputfield value="{!c.firstname}"/>
+						<!-- You can use facets to control headers and footers of
+						certain elements, here we are using the footer facet of
+						columns to place elements into the footer of the table in each
+						column-->
+						<apex:facet name="footer">
+							<apex:inputfield value="{!placeholderContact.firstname}" html-placeholder="First Name"/>
+							<!-- html placeholders allow for clean looking suggestions
+							that clear on input-->
+						</apex:facet>
+					</apex:column>
+					<apex:column headerValue="Last">
+						<apex:outputfield value="{!c.lastname}"/>
+						<apex:facet name="footer">
+							<apex:inputfield value="{!placeholderContact.lastname}" html-placeholder="Last Name"/>
+						</apex:facet>
+					</apex:column>
+					<apex:column headerValue="Phone">
+						<apex:outputfield value="{!c.phone}"/>
+						<apex:facet name="footer">
+							<apex:inputfield value="{!placeholderContact.phone}" html-placeholder="Phone #"/>
+						</apex:facet>
+					</apex:column>
+					<apex:column headerValue="Email">
+						<apex:outputfield value="{!c.email}"/>
+						<apex:facet name="footer">
+							<apex:inputfield value="{!placeholderContact.email}" html-placeholder="Email"/>
+						</apex:facet>
+					</apex:column>
+				</apex:pageBlockTable>
+			</apex:pageblock>
+		</apex:outputpanel>
+	</apex:form >
+</apex:page>

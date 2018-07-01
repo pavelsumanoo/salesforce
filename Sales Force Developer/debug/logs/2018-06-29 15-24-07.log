@@ -1,0 +1,85 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+13:24:05.0 (328385)|USER_INFO|[EXTERNAL]|0051H000008yiOQ|pavel@topengineer.io|Pacific Standard Time|GMT-07:00
+13:24:05.0 (356737)|EXECUTION_STARTED
+13:24:05.0 (360599)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+13:24:05.0 (1630722)|CODE_UNIT_STARTED|[EXTERNAL]|01p1H000007eSqs|D3ChartsController.selectPot()
+13:24:05.0 (1991324)|HEAP_ALLOCATE|[72]|Bytes:3
+13:24:05.0 (2072020)|HEAP_ALLOCATE|[77]|Bytes:152
+13:24:05.0 (2091360)|HEAP_ALLOCATE|[342]|Bytes:408
+13:24:05.0 (2107922)|HEAP_ALLOCATE|[355]|Bytes:408
+13:24:05.0 (2118546)|HEAP_ALLOCATE|[467]|Bytes:48
+13:24:05.0 (2163888)|HEAP_ALLOCATE|[139]|Bytes:6
+13:24:05.0 (2179484)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:7
+13:24:05.0 (2218272)|METHOD_ENTRY|[1]|01p1H000007eSqs|D3ChartsController.D3ChartsController()
+13:24:05.0 (2225326)|STATEMENT_EXECUTE|[1]
+13:24:05.0 (2231357)|STATEMENT_EXECUTE|[1]
+13:24:05.0 (2246941)|METHOD_EXIT|[1]|D3ChartsController
+13:24:05.0 (2259647)|SYSTEM_MODE_ENTER|false
+13:24:05.0 (2382908)|STATEMENT_EXECUTE|[14]
+13:24:05.0 (2385273)|STATEMENT_EXECUTE|[16]
+13:24:05.0 (2388364)|HEAP_ALLOCATE|[16]|Bytes:65
+13:24:05.0 (2410981)|HEAP_ALLOCATE|[16]|Bytes:4
+13:24:05.0 (2461540)|HEAP_ALLOCATE|[50]|Bytes:5
+13:24:05.0 (2486970)|HEAP_ALLOCATE|[56]|Bytes:5
+13:24:05.0 (2494974)|HEAP_ALLOCATE|[64]|Bytes:7
+13:24:05.0 (2758602)|SOQL_EXECUTE_BEGIN|[16]|Aggregations:0|SELECT product__c, potential__c, probability__c FROM Potential__c
+13:24:05.0 (4672283)|SOQL_EXECUTE_END|[16]|Rows:10
+13:24:05.0 (4697606)|HEAP_ALLOCATE|[16]|Bytes:44
+13:24:05.0 (4735477)|HEAP_ALLOCATE|[16]|Bytes:1568
+13:24:05.0 (4768966)|HEAP_ALLOCATE|[16]|Bytes:44
+13:24:05.0 (4803047)|SYSTEM_MODE_EXIT|false
+13:24:05.4 (4822853)|CUMULATIVE_LIMIT_USAGE
+13:24:05.4 (4822853)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 1 out of 100
+  Number of query rows: 10 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:24:05.4 (4822853)|CUMULATIVE_LIMIT_USAGE_END
+
+13:24:05.0 (4857174)|CODE_UNIT_FINISHED|D3ChartsController.selectPot()
+13:24:05.0 (4996247)|CODE_UNIT_FINISHED|Aura
+13:24:05.0 (6049559)|EXECUTION_FINISHED
+13:24:05.12 (12832692)|USER_INFO|[EXTERNAL]|0051H000008yiOQ|pavel@topengineer.io|Pacific Standard Time|GMT-07:00
+13:24:05.12 (12846549)|EXECUTION_STARTED
+13:24:05.12 (12849560)|CODE_UNIT_STARTED|[EXTERNAL]|Aura
+13:24:05.12 (13529609)|CODE_UNIT_STARTED|[EXTERNAL]|01p1H000007eSqs|D3ChartsController.selectPurchased()
+13:24:05.12 (13646703)|SYSTEM_MODE_ENTER|false
+13:24:05.12 (13662316)|STATEMENT_EXECUTE|[22]
+13:24:05.12 (13664672)|STATEMENT_EXECUTE|[24]
+13:24:05.12 (13670702)|HEAP_ALLOCATE|[24]|Bytes:283
+13:24:05.12 (13695787)|HEAP_ALLOCATE|[24]|Bytes:4
+13:24:05.12 (15107284)|SOQL_EXECUTE_BEGIN|[24]|Aggregations:2|SELECT Name, NumberOfEmployees, BillingAddress, Industry, (SELECT FirstName, LastName FROM Contacts), (SELECT Product__c FROM AccountPurchased__r) FROM Account WHERE (NumberOfEmployees > 10000 AND (Name = 'AXA' OR Name = 'Exxon Mobil' OR Name = 'General Electric' OR Name = 'Apple'))
+13:24:05.12 (24728320)|SOQL_EXECUTE_END|[24]|Rows:4
+13:24:05.12 (24787781)|HEAP_ALLOCATE|[24]|Bytes:20
+13:24:05.12 (24867296)|HEAP_ALLOCATE|[24]|Bytes:2062
+13:24:05.12 (24919891)|HEAP_ALLOCATE|[24]|Bytes:20
+13:24:05.12 (24945800)|SYSTEM_MODE_EXIT|false
+13:24:05.24 (24977194)|CUMULATIVE_LIMIT_USAGE
+13:24:05.24 (24977194)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 2 out of 100
+  Number of query rows: 32 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+13:24:05.24 (24977194)|CUMULATIVE_LIMIT_USAGE_END
+
+13:24:05.12 (25022119)|CODE_UNIT_FINISHED|D3ChartsController.selectPurchased()
+13:24:05.12 (25333673)|CODE_UNIT_FINISHED|Aura
+13:24:05.12 (26407910)|EXECUTION_FINISHED

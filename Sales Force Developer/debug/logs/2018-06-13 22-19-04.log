@@ -1,0 +1,29 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+20:19:03.0 (358603)|USER_INFO|[EXTERNAL]|0051H000008yiOQ|pavel@topengineer.io|Pacific Standard Time|GMT-07:00
+20:19:03.0 (481982)|EXECUTION_STARTED
+20:19:03.0 (496189)|CODE_UNIT_STARTED|[EXTERNAL]|0661H000002NMb5|VF: /apex/newAccount
+20:19:03.0 (527214)|CODE_UNIT_STARTED|[EXTERNAL]|VF Controller Save
+20:19:03.0 (556515)|CODE_UNIT_FINISHED|VF Controller Save
+20:19:03.0 (13947248)|VF_SERIALIZE_VIEWSTATE_BEGIN|0661H000002NMb5
+20:19:03.0 (203093646)|VF_SERIALIZE_VIEWSTATE_END
+20:19:03.0 (208608447)|CODE_UNIT_STARTED|[EXTERNAL]|Generate Metadata
+20:19:03.0 (283524416)|CODE_UNIT_FINISHED|Generate Metadata
+20:19:03.286 (286841833)|CUMULATIVE_LIMIT_USAGE
+20:19:03.286 (286841833)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+20:19:03.286 (286841833)|CUMULATIVE_LIMIT_USAGE_END
+
+20:19:03.0 (286912077)|CODE_UNIT_FINISHED|VF: /apex/newAccount
+20:19:03.0 (287675857)|EXECUTION_FINISHED

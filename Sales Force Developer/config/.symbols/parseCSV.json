@@ -1,0 +1,176 @@
+{
+    "constructors": [],
+    "externalReferences": [],
+    "id": "parseCSV",
+    "innerClasses": [],
+    "interfaces": [],
+    "key": "parseCSV",
+    "methods": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 34,
+                "line": 3
+            },
+            "modifiers": [
+                "static",
+                "public"
+            ],
+            "name": "parseCSV",
+            "parameters": [
+                {
+                    "name": "contents",
+                    "type": "String"
+                },
+                {
+                    "name": "skipHeaders",
+                    "type": "Boolean"
+                }
+            ],
+            "references": [],
+            "returnType": "List",
+            "type": null
+        }
+    ],
+    "name": "parseCSV",
+    "namespace": null,
+    "parentClass": "",
+    "properties": [],
+    "tableDeclaration": {
+        "annotations": [],
+        "location": {
+            "column": 27,
+            "line": 1
+        },
+        "modifiers": [
+            "public",
+            "with sharing"
+        ],
+        "name": "parseCSV",
+        "references": [],
+        "type": "parseCSV"
+    },
+    "variables": [
+        {
+            "annotations": [],
+            "location": {
+                "column": 50,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "contents",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 67,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "skipHeaders",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 100,
+                "line": 3
+            },
+            "modifiers": [],
+            "name": "allFields",
+            "references": [],
+            "type": "List<List<String>>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 15,
+                "line": 14
+            },
+            "modifiers": [],
+            "name": "lines",
+            "references": [],
+            "type": "List<String>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 20
+            },
+            "modifiers": [],
+            "name": "num",
+            "references": [],
+            "type": "Integer"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 13,
+                "line": 21
+            },
+            "modifiers": [],
+            "name": "line",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 25
+            },
+            "modifiers": [],
+            "name": "fields",
+            "references": [],
+            "type": "List<String>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 16,
+                "line": 26
+            },
+            "modifiers": [],
+            "name": "cleanFields",
+            "references": [],
+            "type": "List<String>"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 10,
+                "line": 27
+            },
+            "modifiers": [],
+            "name": "compositeField",
+            "references": [],
+            "type": "String"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 11,
+                "line": 28
+            },
+            "modifiers": [],
+            "name": "makeCompositeField",
+            "references": [],
+            "type": "Boolean"
+        },
+        {
+            "annotations": [],
+            "location": {
+                "column": 14,
+                "line": 29
+            },
+            "modifiers": [],
+            "name": "field",
+            "references": [],
+            "type": "String"
+        }
+    ]
+}

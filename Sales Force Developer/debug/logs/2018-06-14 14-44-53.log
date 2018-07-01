@@ -1,0 +1,147 @@
+43.0 APEX_CODE,FINEST;APEX_PROFILING,INFO;CALLOUT,INFO;DB,INFO;NBA,INFO;SYSTEM,DEBUG;VALIDATION,INFO;VISUALFORCE,INFO;WAVE,INFO;WORKFLOW,INFO
+12:44:52.0 (392427)|USER_INFO|[EXTERNAL]|0051H000008yiOQ|pavel@topengineer.io|Pacific Standard Time|GMT-07:00
+12:44:52.0 (460064)|EXECUTION_STARTED
+12:44:52.0 (465049)|CODE_UNIT_STARTED|[EXTERNAL]|0661H000002NMb5|VF: /apex/newAccount
+12:44:52.0 (1093877)|VF_DESERIALIZE_VIEWSTATE_BEGIN|0661H000002NMb5
+12:44:52.0 (16601821)|VF_DESERIALIZE_VIEWSTATE_END
+12:44:52.28 (28916261)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:44:52.29 (29109790)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:44:52.29 (29279080)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:44:52.29 (29521790)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:-4
+12:44:52.0 (29641532)|CODE_UNIT_STARTED|[EXTERNAL]|VF Controller Save
+12:44:52.0 (29660811)|SYSTEM_MODE_ENTER|false
+12:44:52.0 (85016508)|CODE_UNIT_STARTED|[EXTERNAL]|01q1H000000rd4q|AccounbeforeInsert on Account trigger event BeforeInsert|__sfdc_trigger/AccounbeforeInsert
+12:44:52.0 (85061584)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:44:52.0 (85453466)|HEAP_ALLOCATE|[72]|Bytes:3
+12:44:52.0 (85508950)|HEAP_ALLOCATE|[77]|Bytes:152
+12:44:52.0 (85525304)|HEAP_ALLOCATE|[342]|Bytes:408
+12:44:52.0 (85540207)|HEAP_ALLOCATE|[355]|Bytes:408
+12:44:52.0 (85551874)|HEAP_ALLOCATE|[467]|Bytes:48
+12:44:52.0 (85577411)|HEAP_ALLOCATE|[139]|Bytes:6
+12:44:52.0 (85600071)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (85621735)|VARIABLE_SCOPE_BEGIN|[5]|this|AccounbeforeInsert|true|false
+12:44:52.0 (85684218)|VARIABLE_ASSIGNMENT|[5]|this|{}|0x44d8132e
+12:44:52.0 (85747478)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (85802546)|VARIABLE_SCOPE_BEGIN|[5]|this|AccounbeforeInsert|true|false
+12:44:52.0 (85826173)|VARIABLE_ASSIGNMENT|[5]|this|{}|0x44d8132e
+12:44:52.0 (85835135)|STATEMENT_EXECUTE|[5]
+12:44:52.0 (85868770)|HEAP_ALLOCATE|[50]|Bytes:5
+12:44:52.0 (85889354)|HEAP_ALLOCATE|[56]|Bytes:5
+12:44:52.0 (85898667)|HEAP_ALLOCATE|[64]|Bytes:7
+12:44:52.0 (86172692)|HEAP_ALLOCATE|[6]|Bytes:5
+12:44:52.0 (86217143)|HEAP_ALLOCATE|[6]|Bytes:4
+12:44:52.0 (86227433)|VARIABLE_SCOPE_BEGIN|[6]|a|Account|true|false
+12:44:52.0 (86760970)|VARIABLE_ASSIGNMENT|[6]|a|{"ParentId":"0011H00001QMC2DQAX","IsDeleted":false,"CleanStatus":"Pending","Description":"none","OwnerId":"0051H000008yiOQQAY","Phone":"(951) 123-4567","Name":"test01"}|0x39962418
+12:44:52.0 (86772076)|STATEMENT_EXECUTE|[6]
+12:44:52.0 (86789621)|STATEMENT_EXECUTE|[10]
+12:44:52.0 (87145912)|VARIABLE_ASSIGNMENT|[10]|this.Name|"test01"|0x39962418
+12:44:52.0 (87167921)|HEAP_ALLOCATE|[6]|Bytes:5
+12:44:52.0 (87184676)|VARIABLE_ASSIGNMENT|[6]|a|null|
+12:44:52.87 (87194111)|CUMULATIVE_LIMIT_USAGE
+12:44:52.87 (87194111)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:44:52.87 (87194111)|CUMULATIVE_LIMIT_USAGE_END
+
+12:44:52.0 (88021067)|CODE_UNIT_FINISHED|AccounbeforeInsert on Account trigger event BeforeInsert|__sfdc_trigger/AccounbeforeInsert
+12:44:52.0 (90840902)|CODE_UNIT_STARTED|[EXTERNAL]|01q1H000000rd4W|myAccountTrigger on Account trigger event BeforeInsert|__sfdc_trigger/myAccountTrigger
+12:44:52.0 (90873074)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:44:52.0 (90934372)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (90943256)|VARIABLE_SCOPE_BEGIN|[1]|this|myAccountTrigger|true|false
+12:44:52.0 (90981046)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x36873d2e
+12:44:52.0 (91038776)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (91046965)|VARIABLE_SCOPE_BEGIN|[1]|this|myAccountTrigger|true|false
+12:44:52.0 (91061282)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x36873d2e
+12:44:52.0 (91069208)|STATEMENT_EXECUTE|[1]
+12:44:52.0 (91085609)|STATEMENT_EXECUTE|[2]
+12:44:52.0 (91091396)|STATEMENT_EXECUTE|[5]
+12:44:52.91 (91095623)|CUMULATIVE_LIMIT_USAGE
+12:44:52.91 (91095623)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:44:52.91 (91095623)|CUMULATIVE_LIMIT_USAGE_END
+
+12:44:52.0 (91828023)|CODE_UNIT_FINISHED|myAccountTrigger on Account trigger event BeforeInsert|__sfdc_trigger/myAccountTrigger
+12:44:52.0 (95600598)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:44:52.0 (95616573)|DUPLICATE_DETECTION_BEGIN
+12:44:52.0 (96175183)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1H000000SIWW|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+12:44:52.0 (117461805)|DUPLICATE_DETECTION_MATCH_INVOCATION_DETAILS|EntityType:Account|ActionTaken:Allow_[Alert,Report]|DuplicateRecordIds:
+12:44:52.0 (117504265)|DUPLICATE_DETECTION_MATCH_INVOCATION_SUMMARY|EntityType:Account|NumRecordsToBeSaved:1|NumRecordsToBeSavedWithDuplicates:0|NumDuplicateRecordsFound:0
+12:44:52.0 (117737026)|DUPLICATE_DETECTION_END
+12:44:52.0 (117745753)|CODE_UNIT_FINISHED|DuplicateDetector
+12:44:52.0 (147630668)|CODE_UNIT_STARTED|[EXTERNAL]|01q1H000000rd4W|myAccountTrigger on Account trigger event AfterInsert|__sfdc_trigger/myAccountTrigger
+12:44:52.0 (147681907)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:8
+12:44:52.0 (147772518)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (147786942)|VARIABLE_SCOPE_BEGIN|[1]|this|myAccountTrigger|true|false
+12:44:52.0 (147825137)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5a6b719c
+12:44:52.0 (147882003)|HEAP_ALLOCATE|[EXTERNAL]|Bytes:4
+12:44:52.0 (147891546)|VARIABLE_SCOPE_BEGIN|[1]|this|myAccountTrigger|true|false
+12:44:52.0 (147911190)|VARIABLE_ASSIGNMENT|[1]|this|{}|0x5a6b719c
+12:44:52.0 (147922960)|STATEMENT_EXECUTE|[1]
+12:44:52.0 (147937599)|STATEMENT_EXECUTE|[2]
+12:44:52.0 (147954729)|STATEMENT_EXECUTE|[5]
+12:44:52.147 (147960652)|CUMULATIVE_LIMIT_USAGE
+12:44:52.147 (147960652)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:44:52.147 (147960652)|CUMULATIVE_LIMIT_USAGE_END
+
+12:44:52.0 (148977353)|CODE_UNIT_FINISHED|myAccountTrigger on Account trigger event AfterInsert|__sfdc_trigger/myAccountTrigger
+12:44:52.0 (167607351)|CODE_UNIT_STARTED|[EXTERNAL]|DuplicateDetector
+12:44:52.0 (167628561)|DUPLICATE_DETECTION_BEGIN
+12:44:52.0 (167676172)|DUPLICATE_DETECTION_RULE_INVOCATION|DuplicateRuleId:0Bm1H000000SIWW|DuplicateRuleName:Standard Account Duplicate Rule|DmlType:INSERT
+12:44:52.0 (175392121)|DUPLICATE_DETECTION_END
+12:44:52.0 (175399778)|CODE_UNIT_FINISHED|DuplicateDetector
+12:44:52.0 (176678610)|CODE_UNIT_FINISHED|VF Controller Save
+12:44:52.178 (178501727)|CUMULATIVE_LIMIT_USAGE
+12:44:52.178 (178501727)|LIMIT_USAGE_FOR_NS|(default)|
+  Number of SOQL queries: 0 out of 100
+  Number of query rows: 0 out of 50000
+  Number of SOSL queries: 0 out of 20
+  Number of DML statements: 0 out of 150
+  Number of DML rows: 0 out of 10000
+  Maximum CPU time: 0 out of 10000
+  Maximum heap size: 0 out of 6000000
+  Number of callouts: 0 out of 100
+  Number of Email Invocations: 0 out of 10
+  Number of future calls: 0 out of 50
+  Number of queueable jobs added to the queue: 0 out of 50
+  Number of Mobile Apex push calls: 0 out of 10
+
+12:44:52.178 (178501727)|CUMULATIVE_LIMIT_USAGE_END
+
+12:44:52.0 (178540105)|CODE_UNIT_FINISHED|VF: /apex/newAccount
+12:44:52.0 (179248969)|EXECUTION_FINISHED
